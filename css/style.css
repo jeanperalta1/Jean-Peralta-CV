@@ -1,0 +1,171 @@
+body {
+}
+
+/****************   Nav Section **********************/
+nav {
+  background-color: wheat;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em, 1em;
+  font-size: 1.1rem;
+  color: #555;
+  border: 2px solid #a8895c;
+  border-radius: 4cap;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/***********************  Footer Section   **************************/
+footer {
+  background-color: wheat;
+  display: flex;
+  justify-content: center;
+  border: 2px solid #a8895c;
+  border-radius: 4cap;
+  margin-top: 2rem;
+}
+
+/*********** Splash Page ************************/
+header {
+  background-color: wheat;
+  margin-top: 20px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 2px solid #a8895c;
+  border-radius: 4cap;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  color: #3a3a3a;
+}
+
+header img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 3px solid #a8895c;
+  border-radius: 50%;
+  display: block;
+}
+
+.address {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+/************* Sections ********************/
+hr {
+  border: none;
+  height: 4px;
+  background-color: black;
+}
+
+section h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #6b4f3f;
+}
+
+section dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 1.5rem;
+  row-gap: 0.5rem;
+  align-items: baseline;
+}
+
+section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem 1rem;
+}
+
+section a {
+  color: #6b4f3f;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: #a8895c;
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.card img {
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 0.8rem;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #a8895c;
+  border-radius: 20px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .three-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem;
+  border: 1px solid #a8895c;
+  border-radius: 6px;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem;
+  border: 1px solid #a8895c;
+  border-radius: 6px;
+}
